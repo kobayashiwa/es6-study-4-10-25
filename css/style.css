@@ -201,6 +201,10 @@ nav ul li a {
 		height: 88px;
 		padding: 16px 30px;
 	}
+	.top-header.bisible {
+		height: 56px;
+		padding: 0 30px;
+	}
 	.head-logo {
 		position: relative;
 		width: 200px;
