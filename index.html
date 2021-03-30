@@ -1,0 +1,299 @@
+<!doctype html>
+
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>es6-study-4-10-25</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content=""/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+
+    <body>
+
+        <header class="top-header">
+            <div class="in">
+                <div class="head-logo desltop"><img src="img/logo-white.png" alt="FIL"></div>
+                <div class="head-logo smartphone"><img src="img/logo-black.png" alt="FIL"></div>
+                <nav>
+                    <ul class="flex">
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#">Concept</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Store</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="toggle-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Concept</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Store</a></li>
+            </ul>
+        </div>
+
+        <main>
+            <section class="first-view">section / first-view</section>
+            <section class="section-concept">section / section-concept</section>
+            <section class="section-products">section / section-products</section>
+            <section class="slider">section / slider</section>
+            <section class="section-store">section / section-store</section>
+            <section class="section-connected">section / section-connected</section>
+        </main>
+
+        <footer>footer</footer>
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script>
+        // スクロール時に実行する
+        $(window).scroll(function(){
+            // first-viewの高さを取得する
+            let mainVisualHeight = $(".first-view").height();
+            // スクロール量の取得
+            let scroll = $(this).scrollTop();
+            // スクロール量がfirst-viewの高さより大きければclassを付与する
+            if ( scroll > mainVisualHeight){
+                $(".toggle").addClass("bisible");
+            }
+            // スクロール量がtop-headerの高さより小さければ特定のclassを消す
+            else {
+                $(".toggle").removeClass("bisible");
+            }
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $('.toggle').click(function() {
+                $(this).toggleClass('active');
+                
+                if ($(this).hasClass('active')) {
+                    $('.toggle-menu').addClass('active');
+                } else {
+                    $('.toggle-menu').removeClass('active');
+                }
+            });
+        });
+    </script>
+
+    <script>
+        class Animal {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+            greet(){
+                console.log("こんにちは");
+            }
+            info() {
+                this.greet();
+                console.log(`名前は${this.name}です`);
+                console.log(`年齢は${this.age}歳です`);
+                console.log("----------");
+            }
+        }
+        const animal = new Animal("レオ", 3);
+        animal.info();
+
+        class Marketingbank {
+            constructor(media, ad){
+                this.media = media;
+                this.ad = ad;
+            }
+            title() {
+                console.log(`${this.media}${this.ad}で売上げアップ`);
+            }
+            info() {
+                this.title();
+                console.log("LEAD TO SUCCESS");
+                console.log(`厳選した${this.ad}メニューで売上創出を支援`);
+                console.log("Marketing Bank");
+                console.log("----------");
+            }
+        }
+        const marketingbank = new Marketingbank("WEB", "広告");
+        marketingbank.info();
+
+        class Adbisiness {
+            constructor(ad, bisiness, media, voice) {
+                this.ad = ad;
+                this.bisiness = bisiness;
+                this.media = media;
+                this.voice = voice;
+            }
+            heading() {
+                console.log(`${this.ad}${this.bisiness}・${this.media}`);
+            }
+            info() {
+                this.heading();
+                console.log(`「${this.voice}」なんて言わせない！ 現役・大学生編集長が考えるルッキズムが問題視される時代の『東大美女図鑑』`);
+                console.log(`宣伝会議 編集部`);
+                console.log(`2021年3月22日 掲載`);
+                console.log("----------");
+            }
+        }
+        const adbisiness = new Adbisiness("広告", "ビジネス", "メディア", "オワコン");
+        adbisiness.info();
+
+        class Vision {
+            constructor(vol, position, view) {
+                this.vol = vol;
+                this.position = position;
+                this.view = view;
+            }
+            heading() {
+                console.log(`vol.${this.vol}の${this.position}としての${this.view}`);
+            }
+            info() {
+                this.heading();
+                console.log(`理念という土台が整ってようやく、腰を据えてvol.${this.vol}のテーマを考えることができました。`);
+                console.log(`「袋小路感がある現状を変えたい。『コンテンツ』と連呼するけれど問題を感じているのはコンテナの方だ、ちゃんと中身も見てほしい。『東大美女図鑑編集部』というブラックボックスも透明にしたい。編集部員も魅力的なんだから。自分の世界を広げたり、ときにはちっぽけに見せてくるロールモデルに出会う、そんな経験の一部にある媒体でありたい。女子高校生だけでなく、東大の女子学生にとっても。」`);
+                console.log("----------");
+            }
+        }
+        const vision = new Vision(14, "編集長", "今後");
+        vision.info();
+
+        class Project {
+            constructor(thame, issue01, issue02, team) {
+                this.thame = thame;
+                this.issue01 = issue01;
+                this.issue02 = issue02;
+                this.team = team;
+            }
+            heading() {
+                console.log(`さて、${this.thame}は文面としては固まったものの、未だ机上、それを具現化するあゆみは軽やかとはいえません。${this.issue01}、${this.issue02}、意図しないかたちで届くことのないように一つひとつ確かめながら進んでいます。`);
+            }
+            info() {
+                this.heading();
+                console.log(`それでも、自分たちが進むべき方向や届ける相手が確かになった今の${this.team}なら、ぶれることなく完走できるという確信が沸いています。2021年3月現在も新型コロナウイルスの感染が拡大し続ける状況であり、刊行時期は不明ですが、安全を第一に、楽しんで制作したいと思います。`);
+                console.log("----------");
+            }
+        }
+        const project = new Project("テーマ", "ジェンダー", "ルッキズム", "編集部");
+        project.info();
+
+        class Epilogue {
+            constructor(task, status, emotions, pr) {
+                this.task = task;
+                this.status = status;
+                this.emotions = emotions;
+                this.pr = pr;
+            }
+            heading() {
+                console.log(`${this.task}を終えて`);
+            }
+            info() {
+                this.heading();
+                console.log(`「このままでいいのだろうか？」。明確な${this.emotions}を抱いたのは${this.pr}を出すという段階だったというのは、先述の通りです。`);
+                console.log("----------");
+            }
+        }
+        const epilogue = new Epilogue("取材", "このまま", "違和感", "プレスリリース");
+        epilogue.info();
+
+        class Advice {
+            constructor(school, active, media, position, teacher) {
+                this.school = school;
+                this.active = active;
+                this.media = media;
+                this.position = position;
+                this.teacher = teacher;
+            }
+            heading() {
+                console.log(`その際、失礼を重々承知の上で${this.school}の${this.active}でお世話になっていました、『${this.media}』${this.position}の${this.teacher}先生に「課題意識が面白く、大学生がこれに取り組んでいる過程を公にする価値が十分にあると思う」と温かいお言葉をいただき、${this.active}内で自身が抱えていた葛藤と課題についての取り組みを企画として提出するに至りました。`);
+            }
+            info() {
+                this.heading();
+                this.heading();
+                console.log(`${this.active}内の質疑応答では、多くの着想を得、また盲点に気づかされることも多々ありました。`);
+                console.log(`他の受講生の方のご助力は${this.active}外でも厚く、最終${this.active}後お願いしたアンケートにも丁寧な回答をお寄せいただきました。`);
+                console.log(`「話を聞いて『東大美女図鑑』のイメージは変化したか」という問いに対しては、回答者全員のチェックが「変化した」についておりまして、その変化について「東大女子への偏見を解消し東大を志す女子学生を増やしたい、というパーパスを持って活動していると知ることができた」「画一的・ステレオタイプに基づく『美女』ではなく、現代へのリベラルなジェンダー観に即したより自由な『美』の意味付けをしていることが分かった」「内面の美しさを加味し、各人の個性を生かすことを運営側が考えているのは驚いた」とご教授いただき、大変心強く感じました。`);
+                console.log(`さらに、『東大美女図鑑』の美点として「東大内で少数派の女性にフューチャーしている点」「テレビ番組のような外部の視点ではなく、学部のサークルから東大のイメージやブランドを変化・形成しているところ」など、改善点としては「編集部の考えを発信する力が必要なのではないか」等のご指摘をいただきました。`);
+                console.log(`これまで編集部内では「裏方の苦悩を書いて、それを見たい人はいるのだろうか。」「『東大美女図鑑』に期待されているのは、東大美女だけではなかろうか」という懸念が強く、編集部の姿や考えを表に出すことはしてきませんでした。`);
+                console.log(`『東大美女図鑑』という看板と歴史ゆえに現在直面する問題は少なくありません。`);
+                console.log(`けれど、それを看板も歴史も背負ったままだから気づくことのできる問題は、「東大女子」を取り囲む偏見や固定概念の解消に繋がっているのではないかと考えています。`);
+                console.log("----------");
+            }
+        }
+        const advice = new Advice("東京大学情報学環", "講義", "宣伝会議", "編集長", "谷口優");
+        advice.info();
+
+        class Feature {
+            constructor(issue, how, name, namekana, college) {
+                this.issue = issue;
+                this.how = how;
+                this.name = name;
+                this.namekana = namekana;
+                this.college = college;
+            }
+            heading() {
+                console.log(`${this.issue}を見つめ、${this.how}に取り組むことを今後も続けていきたいです。`);
+            }
+            info() {
+                this.heading();
+                console.log(`${this.name}（${this.namekana}）氏。`);
+                console.log(`${this.college}法学部政治コース4年。同情報学環研究生1年。『東大美女図鑑 vol.14』編集長兼企画・ライター統括。本の虫で、年間365本の焼き芋を食べている。`);
+                console.log("----------");
+            }
+        }
+        const feature = new Feature("課題", "丁寧", "望月 花妃", "もちづき・はなき", "東京大学");
+        feature.info();
+
+        class Pickup {
+            constructor(titleEng, titleJp, data, view, radio, media, reason, ad, possible, movie, effect, volume, service, action, use) {
+                this.titleEng = titleEng;
+                this.titleJp = titleJp;
+                this.data = data;
+                this.view = view;
+                this.radio = radio;
+                this.media = media;
+                this.reason = reason;
+                this.ad = ad;
+                this.possible = possible;
+                this.movie = movie;
+                this.effect = effect;
+                this.volume = volume;
+                this.service = service;
+                this.action = action;
+                this.use = use;
+            }
+            heading() {
+                console.log(`${this.titleEng}（${this.titleJp}）`);
+            }
+            list() {
+                this.heading();
+                console.log(`${this.data}で${this.view}される${this.radio}${this.media} ${this.reason}を持って${this.ad}出稿が${this.possible}に`);
+                console.log(`社員数は2000名規模に　電通デジタルと電通アイソバーが合併`);
+                console.log(`リアルの場での感動を、オンラインライブで再現 クリエイティブのプロ集団が生むこの時、この場所での共有体験`);
+                console.log(`「素材の味を活かす」${this.data}との向き合い方に共感する— 『デジノグラフィ』に寄せて（谷口博基）`);
+                console.log(`100ワニ？仮面ライダー？ 日清焼そばU.F.O.のTwitter投稿に注目集まる`);
+                console.log(`パーソナライズを実践するための10の戦略`);
+                console.log(`新しくなったジューシーな「FRISK neo」 新イメージキャラクターは二階堂ふみ`);
+                console.log(`雪肌精、再利用可能な容器の開発へ 2022年夏の発売予定`);
+                console.log(`オランダで見つけた遊び心あふれる店頭アイデア10選`);
+                console.log(`【調査レポート】注目を集める「D2C」において、企業が「生活者起点」で取り組むべき内容とは？`);
+                console.log(`電通が${this.ad}主のKPIに沿ったCM1本ごとの“反応”を分析・${this.view}するサービスを開始`);
+                console.log(`シック・ジャパン新CM 本田翼の小悪魔な「バーバー店主」に大倉孝二と伊島空がドキドキ`);
+                console.log(`横浜流星が完璧なボクシングフォームでプレイ！ 「Fit Boxing 2」新CM`);
+                console.log(`新会社「大阪メトロ アドエラ」が創業 Osaka Metro Groupの${this.ad}事業を担う`);
+                console.log(`第46回鹿児島${this.ad}協会賞 最優秀賞に薩摩酒造の新聞${this.ad}など`);
+                console.log("----------");
+            }
+        }
+        const pickup = new Pickup("PICK UP", "関連記事", "データ", "可視化", "ラジオ", "メディア", "根拠", "広告", "可能", "動画", "効果", "最大", "ヤフー", "行動", "活用");
+        pickup.list();
+    </script>
+
+</html>
