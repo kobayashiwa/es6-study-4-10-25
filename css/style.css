@@ -69,8 +69,11 @@ ul, li {
 	position: relative;
 	width: 241px;
 	height: 60px;
-	top: 0;
+	top: 50%;
 	left: 0;
+	transform: translate(0, -50%);
+	display: flex;
+	align-items: center;
 }
 .head-logo img {
 	width: 100%;
