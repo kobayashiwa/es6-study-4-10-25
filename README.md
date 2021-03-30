@@ -14,10 +14,10 @@ JavaScript 学習コース IV > クラスの継承 > 継承とは
 「リグナイト株式会社」のレイアウト構造をレスポンシブで写経する。
 
 #### サイト構造
-header > logo - nav - toggle
-main > section（hero-image） - section（index--about） - section（index--phenol） - section（index--products） - section（index--application） - section（index--works） - section(index--develop)
-aside
-footer
+- header > logo - nav - toggle
+- main > section（hero-image） - section（index--about） - section（index--phenol） - section（index--products） - section（index--application） - section（index--works） - section(index--develop)
+- aside
+- footer
 
 #### ブレイクポイント
 - desktop（992px ↑）
