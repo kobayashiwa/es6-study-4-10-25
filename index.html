@@ -53,16 +53,16 @@
         // スクロール時に実行する
         $(window).scroll(function(){
             // first-viewの高さを取得する
-            let mainVisualHeight = $(".first-view").height();
+            let mainVisualHeight = $(".top-header").height();
             // スクロール量の取得
             let scroll = $(this).scrollTop();
             // スクロール量がfirst-viewの高さより大きければclassを付与する
             if ( scroll > mainVisualHeight){
-                $(".toggle").addClass("bisible");
+                $(".top-header").addClass("bisible");
             }
             // スクロール量がtop-headerの高さより小さければ特定のclassを消す
             else {
-                $(".toggle").removeClass("bisible");
+                $(".top-header").removeClass("bisible");
             }
         });
     </script>
