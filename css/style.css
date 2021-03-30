@@ -206,12 +206,8 @@ nav ul li a {
 		padding: 0 30px;
 	}
 	.head-logo {
-		position: relative;
 		width: 200px;
 		height: 56px;
-		top: 0;
-		left: 0;
-		background: #444;
 	}
 	nav {
 		position: relative;
@@ -229,9 +225,6 @@ nav ul li a {
 	nav ul li a {
 		color: rgba(0, 0, 0, 0.6);	
 		font-size: 0.9rem;
-	}
-	nav ul li a.active {
-		color: rgba(0, 0, 0, 1);
 	}
 	.toggle {
 		top: 10px;
@@ -258,6 +251,10 @@ nav ul li a {
 	.top-header.bisible {
 		height: 50px;
 		padding: 10px 15px;
+	}
+	.head-logo {
+		width: 170px;
+		height: 30px;
 	}
 }
 
