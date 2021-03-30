@@ -68,9 +68,6 @@ ul, li {
 	transform: translate(0, -50%);
 	background: #444;
 }
-.smartphone {
-	display: none;
-}
 .head-logo img {
 	width: 100%;
 }
@@ -259,6 +256,7 @@ nav ul li a.active {
 
 /** main **/
 main {
+	margin-top: 93px;
 	width: 100%;
 	background: hsl(214, 97%, 23%, 0.5);
 }
