@@ -30,6 +30,7 @@
 
         <main>
             <section class="hero-image">section / hero-image</section>
+            <section class="index--about">section / index--about</section>
         </main>
 
         <footer>footer</footer>
@@ -167,21 +168,9 @@
         project.info();
 
         class Epilogue {
-            constructor(task, status, emotions, pr) {
-                this.task = task;
-                this.status = status;
-                this.emotions = emotions;
-                this.pr = pr;
-            }
-            heading() {
-                console.log(`${this.task}を終えて`);
-            }
-            info() {
-                this.heading();
-                console.log(`「このままでいいのだろうか？」。明確な${this.emotions}を抱いたのは${this.pr}を出すという段階だったというのは、先述の通りです。`);
-            }
         }
 
     </script>
 
 </html>
+
