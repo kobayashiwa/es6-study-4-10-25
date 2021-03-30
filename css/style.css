@@ -213,9 +213,6 @@ nav ul li a {
 		left: 0;
 		background: #444;
 	}
-	.smartphone {
-		display: block;
-	}
 	nav {
 		position: relative;
 		top: 70px;
@@ -255,6 +252,10 @@ nav ul li a {
 }
 @media screen and (max-width: 767px) {
 	.top-header {
+		height: 50px;
+		padding: 10px 15px;
+	}
+	.top-header.bisible {
 		height: 50px;
 		padding: 10px 15px;
 	}
