@@ -297,6 +297,13 @@ main {
 	background: hsl(214, 97%, 23%, 0.7);
 }
 
+/** aside **/
+aside {
+	width: 100%;
+	height: 30vw;
+	background: rgba(85, 149, 170, 0.5);
+}
+
 /** footer **/
 footer {
 	width: 100%;
