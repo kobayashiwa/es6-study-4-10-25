@@ -46,7 +46,7 @@ ul, li {
 
 /** header **/
 .top-header {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -61,11 +61,12 @@ ul, li {
 }
 .head-logo {
 	position: absolute;
-	width: 85px;
-	height: 30px;
+	width: 241px;
+	height: 60px;
 	top: 50%;
 	left: 0;
 	transform: translate(0, -50%);
+	background: #444;
 }
 .smartphone {
 	display: none;
