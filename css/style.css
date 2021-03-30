@@ -70,12 +70,11 @@ ul, li {
 	background: #333;
 }
 .head-logo {
-	position: absolute;
+	position: relative;
 	width: 241px;
 	height: 60px;
-	top: 50%;
+	top: 0;
 	left: 0;
-	transform: translate(0, -50%);
 	background: #444;
 }
 .head-logo img {
@@ -204,11 +203,9 @@ nav ul li a {
 @media screen and (max-width: 991px) {
 	.top-header {
 		height: 88px;
-		padding: 0 30px;
+		padding: 15px 30px;
 	}
 	.head-logo {
-		top: 20px;
-		transform: translate(0, 0);
 	}
 	.desktop {
 		display: none;
