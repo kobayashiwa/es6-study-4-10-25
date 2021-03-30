@@ -303,6 +303,11 @@ main {
 		padding-top: 88px;
 	}
 }
+@media screen and (max-width: 767px) {
+	.hero-image {
+		padding-top: 50px;
+	}
+}
 
 /** aside **/
 aside {
