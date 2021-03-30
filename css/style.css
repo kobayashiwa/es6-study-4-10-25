@@ -276,6 +276,11 @@ main {
 	height: 60vw;
 	background: hsl(214, 97%, 23%, 0.3);
 }
+.index--products {
+	width: 100%;
+	height: 200vw;
+	background: hsl(214, 97%, 23%, 0.4);
+}
 
 /** footer **/
 footer {
