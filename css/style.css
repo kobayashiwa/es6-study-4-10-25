@@ -188,6 +188,9 @@ nav ul li a {
 	background: rgba(0, 0, 0, 0.8);
 	z-index: 2;
 }
+.toggle-menu h3 {
+	font-size: 64px;
+}
 .toggle-menu ul {
 }
 .toggle-menu ul li {
