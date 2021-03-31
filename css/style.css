@@ -17,7 +17,7 @@ body {
 	padding: 0;
 	color: #fff;
 	background: #fff;
-	font-family: 'Roboto Condensed', "Segoe UI", "Helvetica Neue", HelveticaNeue, YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Verdana, Meiryo, sans-serif;
+	font-family: YuMincho;
     font-feature-settings: "palt";
 	letter-spacing: .8px;
 	font-size: 16px;
