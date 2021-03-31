@@ -80,7 +80,7 @@ ul, li {
 }
 nav {
 	height: 100%;
-	padding-right: 80px;
+	padding-right: 60px;
 }
 nav ul {
 	justify-content: flex-end;
