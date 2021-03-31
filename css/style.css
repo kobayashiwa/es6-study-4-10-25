@@ -225,9 +225,10 @@ nav ul li a {
 	.toggle {
 		top: 34px;
 	}
+	.toggle-menu h3 {
+		font-size: 60px;
+	}
 	.toggle-menu ul li {
-		font-size: 2rem;
-		padding: 1rem 0;
 	}
 }
 @media screen and (max-width: 767px) {
