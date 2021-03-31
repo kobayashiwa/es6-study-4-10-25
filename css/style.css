@@ -17,7 +17,7 @@ body {
 	padding: 0;
 	color: #fff;
 	background: #fff;
-	font-family: 'Roboto Condensed', "Segoe UI", "Helvetica Neue", HelveticaNeue, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Verdana, Meiryo, sans-serif;
+	font-family: 'Roboto Condensed', "Segoe UI", "Helvetica Neue", HelveticaNeue, YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Verdana, Meiryo, sans-serif;
     font-feature-settings: "palt";
 	letter-spacing: .8px;
 	font-size: 16px;
@@ -128,12 +128,14 @@ nav ul li a {
 	left: 0;
 	border-radius: 4px 0 0 4px;
 }
-
-
-
-.toggle::after {
-  transform: rotate(-45deg) scaleX(0);
+.toggle span::after {
+	right: 0;
+	border-radius: 0 4px 4px 0;
 }
+
+
+
+
 .toggle span:nth-of-type(1) {
   top: 0;
   left: 0;
