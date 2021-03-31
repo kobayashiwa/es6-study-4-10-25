@@ -87,7 +87,7 @@ nav ul {
 	height: 100%;
 }
 nav ul li {
-	padding: 0 20px;
+	padding: 0 10px;
 	
 }
 nav ul li a {
@@ -132,15 +132,16 @@ nav ul li a {
 	right: 0;
 	border-radius: 0 4px 4px 0;
 }
-
-
-
-
-.toggle span:nth-of-type(1) {
-  top: 0;
-  left: 0;
-  transition-delay: .2s;
+.menu-trigger span:nth-of-type(1) {
+	top: 0;
+	left: 0;
 }
+
+  
+
+
+
+
 .toggle span:nth-of-type(2) {
   top: 29px;
   left: 22px;
