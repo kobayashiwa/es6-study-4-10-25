@@ -164,6 +164,9 @@ nav ul li a {
 	transform: translateX(75%);
 	opacity: 0;
 }
+.menu-trigger.active span:nth-of-type(3)::before {
+	transform: translate(4px, -11px) rotate(-45deg);
+}
 
 
 
@@ -223,8 +226,6 @@ nav ul li a {
 		padding: 0 15px 0 0;
 	}
 	nav ul li a {
-		color: rgba(0, 0, 0, 0.6);	
-		font-size: 0.9rem;
 	}
 	.toggle {
 		top: 34px;
