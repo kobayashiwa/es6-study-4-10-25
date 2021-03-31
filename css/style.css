@@ -99,6 +99,7 @@ nav ul li a {
 .toggle span {
   display: inline-block;
 }
+
 .toggle {
   position: fixed;
   top: 25px;
@@ -127,8 +128,8 @@ nav ul li a {
 .toggle::after,
 .toggle span {
   position: absolute;
-  width: 15px;
-  height: 2px;
+  width: 25px;
+  height: 3px;
   background: #fff;
   transform-origin: 50% 50%;
   transition: .2s;
