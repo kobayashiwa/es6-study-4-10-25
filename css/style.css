@@ -149,7 +149,11 @@ nav ul li a {
 	left: 0;
 }
 .toggle.active span:nth-of-type(1)::before {
-	transform: translate(3px, 11px) rotate(45deg);
+	transform: translate(4px, 11px) rotate(45deg);
+	background: #fff;
+}
+.toggle.active span:nth-of-type(1)::after {
+	transform: translate(-3px, 11px) rotate(-45deg);
 	background: #fff;
 }
 
@@ -162,10 +166,6 @@ nav ul li a {
 
 
 
-.toggle.active::after {
-  transform: rotate(-45deg) scaleX(1);
-  transition-delay: .2s;
-}
 .toggle.active span {
   transform: scaleX(0);
   transition-delay: 0s;
@@ -197,7 +197,12 @@ nav ul li a {
 }
 .active {
 	transform: translateY(0%);
-  }
+}
+@media screen and (max-width: 1199px) {
+	.menu-phenol {
+		display: none;
+	}
+}
 @media screen and (max-width: 991px) {
 	.top-header {
 		height: 88px;
