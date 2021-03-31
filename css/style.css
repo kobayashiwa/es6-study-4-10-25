@@ -247,6 +247,9 @@ nav ul li a {
 	.toggle {
 		top: 15px;
 	}
+	.toggle-menu h3 {
+		font-size: 42px;
+	}
 }
 
 /** main **/
