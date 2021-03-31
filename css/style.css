@@ -63,7 +63,6 @@ ul, li {
 	height: 100%;
 	width: 100%;
 	position: relative;
-	background: #333;
 }
 .head-logo {
 	position: absolute;
@@ -115,18 +114,19 @@ nav ul li a {
 	position: absolute;
 	width: 100%;
 	height: 3px;
+	background: #191919;
 }
-
-
-
-.toggle::before,
-.toggle::after,
-.toggle span {
+.toggle span::before,
+.toggle span::after {
+  content: '';
   position: absolute;
+  width: 51%;
+  height: 3px;
   background: #191919;
-  transform-origin: 50% 50%;
   transition: .2s;
 }
+
+
 .toggle::before {
   transform: rotate(45deg) scaleX(0);
 }
