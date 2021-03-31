@@ -156,20 +156,19 @@ nav ul li a {
 	transform: translate(-3px, 11px) rotate(-45deg);
 	background: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-.toggle.active span {
-  transform: scaleX(0);
-  transition-delay: 0s;
+.toggle.active span:nth-of-type(2)::before {
+	transform: translateX(-75%);
+	opacity: 0;
 }
+
+
+
+
+
+
+
+
+
 .toggle-menu {
 	position: fixed;
 	top: 0;
@@ -195,7 +194,7 @@ nav ul li a {
 .toggle-menu ul li a {
 	color: #fff;
 }
-.active {
+.toggle-menu.active {
 	transform: translateY(0%);
 }
 @media screen and (max-width: 1199px) {
@@ -234,8 +233,7 @@ nav ul li a {
 		font-size: 0.9rem;
 	}
 	.toggle {
-		top: 10px;
-		right: 10px;
+		top: 34px;
 	  }
 	.toggle::before,
 	.toggle::after,
