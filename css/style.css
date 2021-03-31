@@ -164,18 +164,12 @@ nav ul li a {
 	transform: translateX(75%);
 	opacity: 0;
 }
-.menu-trigger.active span:nth-of-type(3)::before {
+.toggle.active span:nth-of-type(3)::before {
 	transform: translate(4px, -11px) rotate(-45deg);
 }
-
-
-
-
-
-
-
-
-
+.toggle.active span:nth-of-type(3)::after {
+	transform: translate(-3px, -11px) rotate(45deg);
+}
 .toggle-menu {
 	position: fixed;
 	top: 0;
@@ -222,10 +216,8 @@ nav ul li a {
 		width: 200px;
 		height: 56px;
 	}
-	nav ul li {
-		padding: 0 15px 0 0;
-	}
-	nav ul li a {
+	nav {
+		display: none;
 	}
 	.toggle {
 		top: 34px;
