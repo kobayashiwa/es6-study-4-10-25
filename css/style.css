@@ -188,10 +188,6 @@ nav ul li a {
 	z-index: 2;
 }
 .toggle-menu ul {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 .toggle-menu ul li {
 	font-size: 4rem;
