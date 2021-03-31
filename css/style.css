@@ -111,20 +111,19 @@ nav ul li a {
 .toggle:focus:not(:focus-visible) {
   outline: none;
 }
-
-
-
-.toggle::before,
-.toggle::after {
-  content: '';
+.toggle span {
+	position: absolute;
+	width: 100%;
+	height: 3px;
 }
+
+
+
 .toggle::before,
 .toggle::after,
 .toggle span {
   position: absolute;
-  width: 25px;
-  height: 3px;
-  background: #fff;
+  background: #191919;
   transform-origin: 50% 50%;
   transition: .2s;
 }
