@@ -199,6 +199,7 @@ nav ul li a {
 .toggle-menu ul {
 	width: 25%;
 	padding: 0 15px;
+	margin-bottom: 2rem;
 }
 .toggle-menu ul li {
 	text-align: left;
