@@ -197,6 +197,7 @@ nav ul li a {
 	width: 25%;
 }
 .toggle-menu ul li {
+	text-align: left;
 }
 .toggle-menu ul li a {
 	color: #fff;
