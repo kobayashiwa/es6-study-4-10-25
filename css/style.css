@@ -205,6 +205,9 @@ nav ul li a {
 	text-align: left;
 	padding-bottom: 10px;
 }
+.toggle-menu ul li.heading {
+	color: #5595aa;
+}
 .toggle-menu ul li a {
 	color: #fff;
 }
