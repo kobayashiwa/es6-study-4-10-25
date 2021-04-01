@@ -199,6 +199,7 @@ nav ul li a {
 }
 .toggle-menu ul li {
 	text-align: left;
+	padding-bottom: 10px;
 }
 .toggle-menu ul li a {
 	color: #fff;
