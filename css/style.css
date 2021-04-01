@@ -234,6 +234,9 @@ nav ul li a {
 	.toggle-menu h3 {
 		font-size: 60px;
 	}
+	.toggle-menu ul {
+		width: 50%;
+	}
 	.toggle-menu ul li {
 	}
 }
