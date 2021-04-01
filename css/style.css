@@ -189,6 +189,8 @@ nav ul li a {
 	transition: all 1s;
 	background: #191919;
 	z-index: 2;
+	overflow: auto;
+ -webkit-overflow-scrolling: touch;
 }
 .toggle-menu h3 {
 	font-size: 64px;
@@ -261,6 +263,15 @@ nav ul li a {
 	.toggle-menu h3 {
 		font-size: 42px;
 		margin-bottom: 40px;
+	}
+	.toggle-menu {
+		flex-direction: column;
+	}
+	.toggle-menu ul {
+		width: 100%;
+	}
+	.toggle-menu ul li {
+		font-size: 14px;
 	}
 }
 
