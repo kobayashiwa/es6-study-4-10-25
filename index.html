@@ -201,9 +201,22 @@
                 console.log("----------");
             }
         }
-        class Digital extends Home {}
+        class Advertising extends Home {}
         const home = new Home("ホーム", "デジタル", "広告", "シンプル", "戦略");
         home.body();
+
+        class Main {
+            constructor(marketing, network) {
+                this.marketing = marketing;
+                this.network = network;
+            }
+            heading() {
+                console.log(`私たちは${this.marketing}施策のなかでも、厳選した${this.network}広告枠をご提供します。`);
+            }
+        }
+        const main = new Main("マーケティング", "インターネット");
+        main.heading();
     </script>
 
 </html>
+
