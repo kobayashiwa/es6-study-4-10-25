@@ -191,8 +191,12 @@
                 this.what = what;
                 this.action = action;
             }
+            breadcrumb() {
+                console.log(`${this.page} > ${this.media}${this.ad}`);
+            }
         }
         const home = new Home("ホーム", "デジタル", "広告", "シンプル", "戦略");
+        home.breadcrumb();
     </script>
 
 </html>
