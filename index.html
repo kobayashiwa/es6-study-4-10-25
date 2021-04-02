@@ -182,6 +182,17 @@
         class Digital extends Mbank {}
         const mbank = new Mbank("デジタル広告", "製品サービス", "ブログ", "セミナーのご案内", "メルマガ会員登録", "コンサルに無料相談", "お問い合わせ",);
         mbank.header();
+
+        class Home {
+            constructor(page, media, ad, what, action) {
+                this.page = page;
+                this.media = media;
+                this.ad = ad;
+                this.what = what;
+                this.action = action;
+            }
+        }
+        const home = new Home("ホーム", "デジタル", "広告", "シンプル", "戦略");
     </script>
 
 </html>
