@@ -184,11 +184,11 @@
         mbank.header();
 
         class Home {
-            constructor(page, media, ad, what, action) {
+            constructor(page, media, ad, type, action) {
                 this.page = page;
                 this.media = media;
                 this.ad = ad;
-                this.what = what;
+                this.type = type;
                 this.action = action;
             }
             breadcrumb() {
@@ -196,6 +196,7 @@
             }
             body() {
                 this.breadcrumb();
+                console.log(`${this.type}な${this.ad}${this.action}で${this.media}マーケティングの効果を最大化`);
                 console.log("----------");
             }
         }
