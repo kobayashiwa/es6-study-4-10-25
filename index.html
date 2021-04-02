@@ -153,6 +153,7 @@
                 this.greet();
                 console.log(`名前は${this.name}です`);
                 console.log(`年齢は${this.age}歳です`);
+                console.log("----------");
             }
         }
         class Dog extends Animal {}
@@ -175,8 +176,10 @@
             header() {
                 this.menu();
                 console.log(`${this.consulting} | ${this.contact}`);
+                console.log("----------");
             }
         }
+        class Digital extends Mbank {}
         const mbank = new Mbank("デジタル広告", "製品サービス", "ブログ", "セミナーのご案内", "メルマガ会員登録", "コンサルに無料相談", "お問い合わせ",);
         mbank.header();
     </script>
