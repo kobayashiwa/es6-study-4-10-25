@@ -140,4 +140,85 @@
         });
     </script>
 
+    <script>
+        class Animal {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+            greet() {
+                console.log("こんにちは");
+            }
+            info() {
+                this.greet();
+                console.log(`名前は${this.name}です`);
+                console.log(`年齢は${this.age}歳です`);
+                console.log("----------");
+            }
+        }
+        class Dog extends Animal {}
+        const animal = new Animal("レオ", 3);
+        animal.info();
+
+        class Mbank {
+            constructor(nav01, nav02, nav03, nav04, nav05, consulting, contact) {
+                this.nav01 = nav01;
+                this.nav02 = nav02;
+                this.nav03 = nav03;
+                this.nav04 = nav04;
+                this.nav05 = nav05;
+                this.consulting = consulting;
+                this.contact = contact;
+            }
+            menu() {
+                console.log(`${this.nav01} | ${this.nav02} | ${this.nav03} | ${this.nav04} | ${this.nav05} | `);
+            }
+            header() {
+                this.menu();
+                console.log(`${this.consulting} | ${this.contact}`);
+                console.log("----------");
+            }
+        }
+        class Digital extends Mbank {}
+        const mbank = new Mbank("デジタル広告", "製品サービス", "ブログ", "セミナーのご案内", "メルマガ会員登録", "コンサルに無料相談", "お問い合わせ",);
+        mbank.header();
+
+        class Home {
+            constructor(page, media, ad, type, action) {
+                this.page = page;
+                this.media = media;
+                this.ad = ad;
+                this.type = type;
+                this.action = action;
+            }
+            breadcrumb() {
+                console.log(`${this.page} > ${this.media}${this.ad}`);
+            }
+            body() {
+                this.breadcrumb();
+                console.log(`${this.type}な${this.ad}${this.action}で${this.media}マーケティングの効果を最大化`);
+                console.log(`営業スタイルが多様化し、対面だけでなくオンライン上の顧客接点がますます重視される昨今、${this.media}マーケティングを強化しようと意気込む企業様は多いでしょう。`);
+                console.log("----------");
+            }
+        }
+        class Advertising extends Home {}
+        const home = new Home("ホーム", "デジタル", "広告", "シンプル", "戦略");
+        home.body();
+
+        class Main {
+            constructor(marketing, network) {
+                this.marketing = marketing;
+                this.network = network;
+            }
+            heading() {
+                console.log(`私たちは${this.marketing}施策のなかでも、厳選した${this.network}広告枠をご提供します。`);
+            }
+        }
+        class Whitepaper extends Main {}
+        const main = new Main("マーケティング", "インターネット");
+        main.heading();
+    </script>
+
 </html>
+
+
